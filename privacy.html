@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TruVault — Privacy Policy</title>
+<style>
+:root{--bg:#09090B;--fg:#E4E4E7;--muted:#A1A1AA;--accent:#10B981;--line:#27272A;--card:#121214}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:0 16px}
+main{max-width:760px;margin:0 auto;padding:64px 0 96px}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.5px;margin:0 0 8px}
+h2{font-size:20px;margin:40px 0 10px;color:#FAFAFA}
+.meta{color:var(--muted);font-size:14px;margin-bottom:40px}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:28px 0}
+.card strong{color:var(--accent)}
+ul{padding-left:20px}
+li{margin:6px 0}
+footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>TruVault Privacy Policy</h1>
+<p class="meta">Last updated: 7 November 2026 &middot; Applies to the Android app <code>in.gamezalgames.truvault</code></p>
+
+<div class="card">
+<p><strong>Short version:</strong> TruVault collects nothing. It has no servers, no accounts and no analytics, and the app does not request the Android <code>INTERNET</code> permission, so it cannot transmit your data anywhere. Everything you save stays encrypted on your device.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>TruVault is an offline password manager for Android published by Alok Kumar Singh. Contact: <a href="mailto:alokdevelopment19@gmail.com">alokdevelopment19@gmail.com</a>.</p>
+
+<h2>2. Data we collect</h2>
+<p><strong>None.</strong> We do not collect, receive, transmit, sell or share any personal data. We operate no backend service that the app talks to. We have no ability to read your vault, and no way to recover it for you.</p>
+
+<h2>3. Data the app stores on your device</h2>
+<ul>
+<li>Vault entries you create: titles, usernames, passwords, URLs and notes.</li>
+<li>App preferences, such as your screenshot-protection and auto-lock settings.</li>
+</ul>
+<p>This data is written only to TruVault's private app storage on your device. No other app can read it, and it is never uploaded.</p>
+
+<h2>4. How your data is protected</h2>
+<ul>
+<li>Each entry's sensitive fields are encrypted with AES-256-GCM using a unique initialisation vector.</li>
+<li>The database itself is encrypted at rest with SQLCipher.</li>
+<li>Encryption keys are held in the Android Keystore, hardware-backed on devices that support it. Keys never leave the device and are not extractable by the app.</li>
+<li>Opening the vault and revealing a stored password require biometric or device-lock authentication.</li>
+<li>Screenshots and screen recording are blocked inside the app by default (<code>FLAG_SECURE</code>). You can turn this off in Settings.</li>
+<li>Android system backup is disabled for this app, so your vault is not copied into Google Drive backups.</li>
+</ul>
+
+<h2>5. Permissions we request</h2>
+<ul>
+<li><code>USE_BIOMETRIC</code> and <code>USE_FINGERPRINT</code> &mdash; to unlock the vault and to confirm it is you before a password is revealed. Biometric data is handled entirely by the Android system; TruVault never sees your fingerprint or face data.</li>
+</ul>
+<p>TruVault requests no network, location, contacts, camera, microphone or storage permissions.</p>
+
+<h2>6. Export and import</h2>
+<p>You can export an encrypted backup of your vault to a file of your choosing. Once that file leaves the app it is under your control, and its safety depends on where you put it. Keep exports somewhere you trust, and protect the passphrase you used.</p>
+
+<h2>7. Third parties</h2>
+<p>TruVault contains no advertising SDKs, no analytics SDKs and no crash-reporting SDKs. No third party receives data from the app. If you install TruVault from Google Play, Google collects installation and billing information under its own privacy policy; that is between you and Google, and TruVault receives none of it.</p>
+
+<h2>8. Children</h2>
+<p>TruVault is not directed at children under 13 and collects no data from anyone, including children.</p>
+
+<h2>9. Deleting your data</h2>
+<p>Uninstalling the app, or clearing its data from Android Settings, permanently destroys the vault on that device. <strong>There is no recovery.</strong> Export a backup first if you want to keep your entries.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published at this URL with a new date at the top. Material changes will also be noted in the app's release notes.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy: <a href="mailto:alokdevelopment19@gmail.com">alokdevelopment19@gmail.com</a>.</p>
+
+<footer>TruVault &middot; <a href="https://github.com/Alok191196/TruVault">Source on GitHub</a></footer>
+</main>
+</body>
+</html>
