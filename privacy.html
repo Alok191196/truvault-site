@@ -23,7 +23,7 @@ footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:v
 <body>
 <main>
 <h1>TruVault Privacy Policy</h1>
-<p class="meta">Last updated: 7 November 2026 &middot; Applies to the Android app <code>in.gamezalgames.truvault</code></p>
+<p class="meta">Last updated: 8 November 2026 &middot; Applies to the Android app <code>in.gamezalgames.truvault</code></p>
 
 <div class="card">
 <p><strong>Short version:</strong> TruVault collects nothing. It has no servers, no accounts and no analytics, and the app does not request the Android <code>INTERNET</code> permission, so it cannot transmit your data anywhere. Everything you save stays encrypted on your device.</p>
@@ -39,6 +39,7 @@ footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:v
 <ul>
 <li>Vault entries you create: titles, usernames, passwords, URLs and notes.</li>
 <li>App preferences, such as your screenshot-protection and auto-lock settings.</li>
+<li>Card details you scan or type, which are stored exactly like any other entry. Scanned images themselves are never stored.</li>
 </ul>
 <p>This data is written only to TruVault's private app storage on your device. No other app can read it, and it is never uploaded.</p>
 
@@ -55,8 +56,9 @@ footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:v
 <h2>5. Permissions we request</h2>
 <ul>
 <li><code>USE_BIOMETRIC</code> and <code>USE_FINGERPRINT</code> &mdash; to unlock the vault and to confirm it is you before a password is revealed. Biometric data is handled entirely by the Android system; TruVault never sees your fingerprint or face data.</li>
+<li><code>CAMERA</code> &mdash; only so you can scan a bank card instead of typing its details. The camera opens only when you tap &ldquo;Scan card&rdquo;. Frames are read in memory on your device, are never written to storage and are never transmitted. The text recognition model is built into the app, so scanning works with no internet connection. You can always type card details in by hand and never grant this permission.</li>
 </ul>
-<p>TruVault requests no network, location, contacts, camera, microphone or storage permissions.</p>
+<p>TruVault requests no network, location, contacts, microphone or storage permissions.</p>
 
 <h2>6. Export and import</h2>
 <p>You can export an encrypted backup of your vault to a file of your choosing. Once that file leaves the app it is under your control, and its safety depends on where you put it. Keep exports somewhere you trust, and protect the passphrase you used.</p>
